@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@400&display=swap');
+ 
+body {
+    margin: 0px;
+    /*background: #000000;*/
+    height: 100%;
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: calc(100px + 13.5vw);
+    text-align: left;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    color: #01d1ff;
+    overflow-wrap: break-word;
+    word-wrap: anywhere;
+}
+
+#quote p {
+    line-height: 10%;
+    font-style: italic;
+}
+
+#about-container, #credits-container {
+    display:block;
+    font-family: 'Noto Serif HK', serif;
+    word-wrap: normal;
+    position: absolute;
+    width: 50%;
+    background-color: #fcf6ef;
+    margin-left: 5%;
+    padding-bottom: 8%;
+    height: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#about-content, #credits-content {
+    overflow-y: auto;
+    top: 0;
+    height: 100%;
+    padding-right: 2px;
+}
+
+#title h3  {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: left;
+    border-bottom: solid black;
+    width: fit-content;
+}
+
+h4  {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: left;
+    width: fit-content;
+}
+#title {
+}
+
+#credits-text {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+}
+
+#menu {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: calc(15px + 2vw);
+    text-align: center;
+    padding-bottom:1%;
+    background: inherit;
+}
+
+.menu-item {
+    display: flex;
+    flex: 0 1 auto;
+    list-style-type: none;
+    z-index: 100000;
+}
+
+#menu a {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: #01d1ff;
+    text-decoration: none;
+}
+
+#title a {
+    color: #000;
+    text-decoration: none;
+}
+
+#video1, #video2, #audio {
+    visibility: hidden;
+    display: none;
+}
+
+#playdiv {
+    margin: auto;
+    width: 80%;
+}
+
+#canvas {
+    width: 100%;
+    margin: auto;
+}
+
+#canvasdiv {
+    position: relative;
+    width: 100%;
+    border: solid 10px;
+}
+
+#play {
+    margin: auto;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: #01d1ff;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: calc(20px + 8vw);
+}
+
+#outer {
+    margin: auto;
+    display: flex;
+    height: 100%;
+    width: 95%;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+    word-wrap: anywhere;
+
+}
+
+#bg {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    background: url(bg.jpg) no-repeat center center;
+    background-color: black;
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    z-Index: -99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: right;
+}
+
+@media (max-width: 800px) {
+    #intro { 
+        position: absolute;
+        top: 25%;
+        left: 0;
+        color: white;
+        font-size: calc(25px + 1.0vw);
+        width: 100%;
+    }
+    #intro p {
+        width: 80%;
+        margin-left: 4%;
+    }
+    #about-container, #credits-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 800px) {
+    #intro { 
+        position: absolute;
+        top: 50%;
+        left: 0;
+        color: white;
+        font-size: calc(25px + 1.0vw);
+        width: 100%;
+    }
+    #intro p {
+        width: 80%;
+        margin-left: 4%;
+    }
+}
+
+#content {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.description {
+    color: #ffffff;
+    font-size: 1.75vw;
+}
