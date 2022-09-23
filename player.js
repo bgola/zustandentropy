@@ -6,9 +6,9 @@ let choose = function (array) {
 }
 
 let video1 = document.getElementById('video1');
-video1.src = 'webm/' + choose(videos);
+video1.src = 'webm/vp8/' + choose(videos);
 let video2 = document.getElementById('video2');
-video2.src = 'webm/' + choose(videos);
+video2.src = 'webm/vp8/' + choose(videos);
 
 let canvas = document.getElementById("canvas")
 let canvasctx = canvas.getContext("2d")
@@ -27,10 +27,10 @@ let video = video1;
 let changeVideos = function () {
     if (video == video1) {
         video = video2;
-        video1.src = "webm/" + choose(videos);
+        video1.src = "webm/vp8/" + choose(videos);
     } else {
         video = video1;
-        video2.src = "webm/" + choose(videos);
+        video2.src = "webm/vp8/" + choose(videos);
     }
     video.play();
 }
